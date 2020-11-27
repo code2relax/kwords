@@ -1,4 +1,4 @@
-node {
+node(docker-node) {
     stage('Build') {
         echo 'Building....'
     }
