@@ -1,2 +1,6 @@
-FROM node:15-3.slim
+FROM node:erbium-alpine3.9
+RUN mkdir -p /breact
+ADD . /breact
+WORKDIR /breact
 RUN npm install
+RUN npm run build
