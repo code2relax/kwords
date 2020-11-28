@@ -1,4 +1,4 @@
-node {
+node("node1") {
     stage('Build') {
         echo 'Building....'
 	git 'https://github.com/code2relax/kwords'
