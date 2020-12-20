@@ -7,3 +7,4 @@ RUN npm run build
 
 FROM httpd:2.4.46-alpine
 COPY --from=build /breact/build/ /usr/local/apache2/htdocs/
+
